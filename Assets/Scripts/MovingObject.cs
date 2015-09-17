@@ -9,7 +9,7 @@ public class MovingObject : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		transform.Translate(Vector2.left * Time.deltaTime * 10);
 	}
 	void OnTriggerEnter2D(Collider2D other)

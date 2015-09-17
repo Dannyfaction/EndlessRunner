@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: a7f8d9dac7b6f7a4199bce6e55c48b00
+timeCreated: 1442400975
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Spook_0
+    21300002: Spook_1
+    21300004: Spook_2
+    21300006: Spook_3
+    21300008: Spook_4
+    21300010: Spook_5
+    21300012: Spook_6
+    21300014: Spook_7
+    21300016: Spook_8
+    21300018: Spook_9
+    21300020: Spook_10
+    21300022: Spook_11
+    21300024: Spook_12
+    21300026: Spook_13
+    21300028: Spook_14
+    21300030: Spook_15
+    21300032: Spook_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Spook_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 19
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 19
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 19
+        width: 51
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 19
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_4
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 19
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 19
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_6
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 19
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_7
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 19
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_8
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 19
+        width: 51
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_9
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 19
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_10
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 19
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_11
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 19
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_12
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 19
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_13
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 19
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_14
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 19
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_15
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 19
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spook_16
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 19
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
