@@ -5,7 +5,6 @@ public class Movement : MonoBehaviour {
 
 	[SerializeField]
 	private float movementSpeed;
-
 	[SerializeField]
 	private AudioClip pickupSound;
 	[SerializeField]
@@ -54,69 +53,60 @@ public class Movement : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		/*
 		switch (other.transform.tag) {
 		case "RedWall":
-
+			if(rend.material.color != Color.red) {
+				hitWall();
+			}
+			else{
+				AudioSource.PlayClipAtPoint(wooshSound, new Vector3(5, 1, 2));
+			}
 				break;
+		case "GreenWall":
+			if(rend.material.color != Color.green){
+				hitWall ();
+			}
+			else{
+				AudioSource.PlayClipAtPoint(wooshSound, new Vector3(5, 1, 2));
+			}
+			break;
+		case "BlueWall":
+			if(rend.material.color != Color.blue){
+				hitWall ();
+			}
+			else{
+				AudioSource.PlayClipAtPoint(wooshSound, new Vector3(5, 1, 2));
+			}
+			break;
+		case "RedSlime":
+			if(rend.material.color == Color.red){
+				hitSlime();
+				Destroy(other.gameObject);
+			}
+			break;
+		case "GreenSlime":
+			if(rend.material.color == Color.green){
+				hitSlime();
+				Destroy(other.gameObject);
+			}
+			break;
+		case "BlueSlime":
+			if(rend.material.color == Color.blue){
+				hitSlime();
+				Destroy(other.gameObject);
+			}
+			break;
 		default:
+			Debug.Log("Error");
 			break;
 		}
-		*/
-		if (other.transform.tag == "RedWall")
-		{
-			if(rend.material.color != Color.red) {
-				AudioSource.PlayClipAtPoint(hitSound, new Vector3(5, 1, 2));
-				countHealth --;
-			}
-			else{
-				AudioSource.PlayClipAtPoint(wooshSound, new Vector3(5, 1, 2));
-			}
-		}
-		else if (other.transform.tag == "GreenWall")
-		{
-			if(rend.material.color != Color.green){
-				AudioSource.PlayClipAtPoint(hitSound, new Vector3(5, 1, 2));
-				countHealth --;
-			}
-			else{
-				AudioSource.PlayClipAtPoint(wooshSound, new Vector3(5, 1, 2));
-			}
-		}
-		else if (other.transform.tag == "BlueWall")
-		{
-			if(rend.material.color != Color.blue){
-				AudioSource.PlayClipAtPoint(hitSound, new Vector3(5, 1, 2));
-				countHealth--;
-			}
-			else{
-				AudioSource.PlayClipAtPoint(wooshSound, new Vector3(5, 1, 2));
-			}
-		}
-		else if (other.transform.tag == "RedSlime")
-		{
-			if(rend.material.color == Color.red){
-				AudioSource.PlayClipAtPoint(pickupSound, new Vector3(5, 1, 2));
-				score.AddScore10();
-				Destroy(other.gameObject);
-			}
-
-		}
-		else if (other.transform.tag == "GreenSlime")
-		{
-			if(rend.material.color == Color.green){
-				AudioSource.PlayClipAtPoint(pickupSound, new Vector3(5, 1, 2));
-				score.AddScore10();
-				Destroy(other.gameObject);
-			}
-		}
-		else if (other.transform.tag == "BlueSlime")
-		{
-			if(rend.material.color == Color.blue){
-				AudioSource.PlayClipAtPoint(pickupSound, new Vector3(5, 1, 2));
-				score.AddScore10();
-				Destroy(other.gameObject);
-			}
-		}
+	}
+	void hitWall(){
+		AudioSource.PlayClipAtPoint(hitSound, new Vector3(5, 1, 2));
+		countHealth --;
+	}
+	void hitSlime(){
+		AudioSource.PlayClipAtPoint(pickupSound, new Vector3(5, 1, 2));
+		score.AddScore10();
 	}
 }
