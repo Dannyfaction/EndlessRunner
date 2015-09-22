@@ -4,8 +4,13 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
 
-	public Text ScoreText;
-	public int totalScore;
+	[SerializeField]
+	private Text ScoreText;
+	public static int totalScore;
+	public static int TotalScore{
+		get { return totalScore; }
+		set { totalScore = value; }
+	}
 	
 	public void Start()
 	{

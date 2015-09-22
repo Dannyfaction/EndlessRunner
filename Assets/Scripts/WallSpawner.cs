@@ -6,6 +6,10 @@ public class WallSpawner : MonoBehaviour {
 
 	[SerializeField]
 	private List<GameObject> myPrefabs = new List<GameObject>();
+
+	[HideInInspector]
+	public int number;
+
 	private float wallSpawnTimer = 10f;
 	private float whichColor = 0f;
 	private float whichSlime = 0f;
@@ -37,15 +41,15 @@ public class WallSpawner : MonoBehaviour {
 			if(slimeSpawner <= 5){
 				if(Mathf.Round(whichSlime) == 1){
 					//Spawn Red Slime
-					GameObject wallSpawn = (GameObject)Instantiate(myPrefabs[3], new Vector3(20,Random.Range(-4,4),0), transform.rotation);
+					GameObject slimeSpawn = (GameObject)Instantiate(myPrefabs[3], new Vector3(20,Random.Range(-4,4),0), transform.rotation);
 				}
 				else if(Mathf.Round(whichSlime) == 2){
 					//Spawn Red Slime
-					GameObject wallSpawn = (GameObject)Instantiate(myPrefabs[4], new Vector3(20,Random.Range(-4,4),0), transform.rotation);
+					GameObject slimeSpawn = (GameObject)Instantiate(myPrefabs[4], new Vector3(20,Random.Range(-4,4),0), transform.rotation);
 				}
 				else if(Mathf.Round(whichSlime) == 3){
 					//Spawn Red Slime
-					GameObject wallSpawn = (GameObject)Instantiate(myPrefabs[5], new Vector3(20,Random.Range(-4,4),0), transform.rotation);
+					GameObject slimeSpawn = (GameObject)Instantiate(myPrefabs[5], new Vector3(20,Random.Range(-4,4),0), transform.rotation);
 				}
 			}
 			if(Mathf.Round(whichColor)== 1){

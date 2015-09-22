@@ -3,10 +3,20 @@ using System.Collections;
 
 public class Movement : MonoBehaviour {
 
-	public float movementSpeed;
+	[SerializeField]
+	private float movementSpeed;
+
+	[SerializeField]
+	private AudioClip pickupSound;
+	[SerializeField]
+	private AudioClip hitSound;
+	[SerializeField]
+	private AudioClip wooshSound;
+
 	private Renderer rend;
-	public int countHealth;
-	public Score score;
+	private int countHealth;
+	[SerializeField]
+	private Score score;
 
 	void Start () {
 		countHealth = 5;
@@ -44,27 +54,49 @@ public class Movement : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other)
 	{
+		/*
+		switch (other.transform.tag) {
+		case "RedWall":
+
+				break;
+		default:
+			break;
+		}
+		*/
 		if (other.transform.tag == "RedWall")
 		{
 			if(rend.material.color != Color.red) {
+				AudioSource.PlayClipAtPoint(hitSound, new Vector3(5, 1, 2));
 				countHealth --;
+			}
+			else{
+				AudioSource.PlayClipAtPoint(wooshSound, new Vector3(5, 1, 2));
 			}
 		}
 		else if (other.transform.tag == "GreenWall")
 		{
 			if(rend.material.color != Color.green){
+				AudioSource.PlayClipAtPoint(hitSound, new Vector3(5, 1, 2));
 				countHealth --;
+			}
+			else{
+				AudioSource.PlayClipAtPoint(wooshSound, new Vector3(5, 1, 2));
 			}
 		}
 		else if (other.transform.tag == "BlueWall")
 		{
 			if(rend.material.color != Color.blue){
+				AudioSource.PlayClipAtPoint(hitSound, new Vector3(5, 1, 2));
 				countHealth--;
+			}
+			else{
+				AudioSource.PlayClipAtPoint(wooshSound, new Vector3(5, 1, 2));
 			}
 		}
 		else if (other.transform.tag == "RedSlime")
 		{
 			if(rend.material.color == Color.red){
+				AudioSource.PlayClipAtPoint(pickupSound, new Vector3(5, 1, 2));
 				score.AddScore10();
 				Destroy(other.gameObject);
 			}
@@ -73,6 +105,7 @@ public class Movement : MonoBehaviour {
 		else if (other.transform.tag == "GreenSlime")
 		{
 			if(rend.material.color == Color.green){
+				AudioSource.PlayClipAtPoint(pickupSound, new Vector3(5, 1, 2));
 				score.AddScore10();
 				Destroy(other.gameObject);
 			}
@@ -80,6 +113,7 @@ public class Movement : MonoBehaviour {
 		else if (other.transform.tag == "BlueSlime")
 		{
 			if(rend.material.color == Color.blue){
+				AudioSource.PlayClipAtPoint(pickupSound, new Vector3(5, 1, 2));
 				score.AddScore10();
 				Destroy(other.gameObject);
 			}
